@@ -1,0 +1,20 @@
+# Use an official Node.js runtime as a parent image.
+FROM node:20-alpine
+
+# Set the working directory.
+WORKDIR /usr/src/app
+
+# Copy package.json and package-lock.json (if available)
+COPY package*.json ./
+
+# Install production dependencies.
+RUN npm install --production
+
+# Copy the rest of your application code.
+COPY . .
+
+# Expose the port that your app listens on (App Engine expects 8080 by default)
+EXPOSE 8080
+
+# Start your application.
+CMD [ "node", "index.js" ]

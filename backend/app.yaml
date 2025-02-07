@@ -1,0 +1,28 @@
+runtime: nodejs18
+env: flex
+service_account: timecapsule-service-account@single-bonus-447120-s5.iam.gserviceaccount.com
+# (Optional) Specify instance class and scaling settings
+instance_class: F2
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 5
+
+# Environment variables (set these here or via the Cloud Console)
+env_variables:
+  JWT_SECRET: "secret"
+  GCP_PROJECT_ID: "single-bonus-447120-s5"
+  GCP_SERVICE_ACCOUNT_KEY: '{
+  "type": "service_account",
+  "project_id": "single-bonus-447120-s5",
+  "private_key_id": "f25b131436c82f92b8142b61236e0092b3476f79",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQClY9tZRJypzURX\nGvWrnhZGbZztycYxttzeOCGAsxRkuGRAkZPCulAxLVbE37j+zjJUD4/uHPRZ1tCN\nw0F6cjxHxnMac2id6gviP5ceEnJbxVK2r0e3H8uMtYO+KNtsTo+TzZ8BlOFTF90C\n43tkHkoTcfZ5ceWCDZbRNX2ETDKpSPGNXS4vNHLCsHZ3+kmngwmm1cNhfz99hfmJ\nD2A+MJdURR3HtEex/acf1UjmBZVQGAL1Rg3kH9LJ2I7xFR75/ulRBSSmi9U3QfNr\nqqzBpgYj+G6jui0P02WFKl5imMpeftxTp7ztIX1ZT0Nw+dOaIb9epIZOjvXNVFpr\n42N9IbV7AgMBAAECggEAAuFeQKc+CKhxlL8OqmOMyZ5/Oaimb8URcF684qGyo5T8\ng7HufjSddVgUcGqYLWhs54gEbFPUVeB9yXkb2JtttAqWO06gO98+ZHQa6pHM9aEx\nnu+UZRYfUAgZhg03raKzMZJrPv+XRdv6Ub3qnNtB5pOCKU7c/b0OIiNS2DZaFPI0\nvjpCP2V2X1j+KSCqDUzxRRLzGrtFwYCuFE/pvD7xh35R+Z6vLyXyJS4D/TeX7QdY\nr+kiMlio9gDjiZkTOOCAf4DxURp5LeGkFDtKsjIa+nrEsWXUz257O3YgVnqWJTVy\nMunPxm9JJMB2+yt6FRBmAsVA0Q1A/kFfN1Jts+8HFQKBgQDOQUaWd70TdxyWJkSg\n5zYezooY/iRLr9ogJCxkJJo6CcpKuWNYriBTpN5wbWpzvq8p4mTnkI8KW9GaZ6uF\npZBfvMHStCawMAIsG7VkvCJgH/Ma5Xqnikbcjnb4z04IjL6azeVfSRdkXnvAxnJ4\nwhj7S+lMKr/JIeqw5UvwYsh4ZwKBgQDNR3lJqNLzxczcdpCwwOkXL/o9Hbk09pp2\nyVL+PkBdrG8ewLDIicFR0WjgnyZq+yKkuTOysO+rrvZIvwqqqMfBJ6M/CB5dS3Fj\nd0EwbOT4HtUtYjOu9Qm391dedFchKIhMl6813pEOo0dvM9KEXHfnK1xMizF0Er8f\n8RU9vFl9zQKBgFQrrVvQZ5fe/wqDeXRUhvCRhyfl5vgAPrrpKDiB+3J99lECUPmq\nrcSUvrYQ4OV1RtSH8HfTtZwblnE1p3i19TIsvMh4/mTeYrSPZjpC0KB7yWELjz96\nHar6dLDbINQ6Y7qXFekJ0gMCz+v+0E5Zn4pGE2Ii+/tf3P/tw0zJc1g3AoGBALRB\natOvl23P5xBAXNWY0BU4X/iCvTswwHpGVsZCS6r1262ZbqLptAPwarOzjLysQcN7\njVX/4LVVMZa3itpI0v9dmw+iRWeO88Zv1aJ8PKNUD8WGUfPz39DXNLUQW+IWAXmg\nSI55Hc9IuVWAn/7yY6duf+IG6CoQvBuESy6m0b6RAoGBAKfB09Amyhbuzak6jESk\nS8lMs+wpywI5jRNPGHbP9x5A0uPQUXrVe7R4c/Rad58r1PP+dI6rMsBgpLz8M1RE\n5enqzDUf20zw2P7uXVfee8gkSk8GvuG7AnmpptgQgYz/GOMy+XGiBwCRKI9UuyWM\nejh07K3DIIv+usGf5QaljxUi\n-----END PRIVATE KEY-----\n",
+  "client_email": "timecapsule-service-account@single-bonus-447120-s5.iam.gserviceaccount.com",
+  "client_id": "107994493053383336454",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/timecapsule-service-account%40single-bonus-447120-s5.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}'  # Use JSON string or set this securely
+ 
+
